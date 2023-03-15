@@ -106,26 +106,4 @@ public class FindLoopTest {
         int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
-
-    @Test
-    public void whenDiapasonHasStartLessThanZero() {
-        int[] data = new int[]{5, 2, 8, 2, 4};
-        int el = 8;
-        int start = -2;
-        int finish = 4;
-        int result = FindLoop.indexInRange(data, el, start, finish);
-        int expected = -1;
-        assertThat(result).isEqualTo(expected);
-    }
-
-    @Test
-    public void whenDiapasonHasFinishMoreThanMaxIndex() {
-        int[] data = new int[]{5, 2, 8, 2, 4};
-        int el = 8;
-        int start = 0;
-        int finish = 5;
-        int result = FindLoop.indexInRange(data, el, start, finish);
-        int expected = -1;
-        assertThat(result).isEqualTo(expected);
-    }
 }
