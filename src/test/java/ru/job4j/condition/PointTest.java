@@ -8,7 +8,7 @@ public class PointTest {
     public void when00to20then2() {
         double expected = 2;
         Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
+        Point b = new Point(2, 0);
         Assert.assertEquals(expected, a.distance(b), 0.01);
     }
 
